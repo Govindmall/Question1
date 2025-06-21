@@ -12,8 +12,8 @@ object DistinctCountries {
     //show the number of countries
     val numDistinctCountries=countriesDF.count()
     println(s"The number of countries: $numDistinctCountries")
-    //sales1.write.parquet("C:/Users/gomall/Desktop/resultDataSetParquet.parquet")
-    countriesDF.write.csv("C:/Users/gomall/Desktop/result1.csv")
+    //saving as a parquet file
+    countriesDF.write.parquet("C:/Users/gomall/Desktop/result1.parquet")
     spark.stop()
 
 
